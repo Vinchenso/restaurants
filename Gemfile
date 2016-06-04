@@ -9,10 +9,12 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'ancestry'
 gem 'rails_admin'
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'byebug'
   gem 'awesome_print'
+  gem 'better_errors'
 end
 
 group :development do

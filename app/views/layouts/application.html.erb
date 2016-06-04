@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Restaurants</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Restaurants</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-title">
+        <a href ='/'>Restrurants</a>
+      </div>
+      <div>
+        <div class="top-bar-left"></div>
+        <div class="top-bar-right">
+          <a href="/admin">Manage Restrurants</a>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class="large-12 columns>"
+      </div>
+    </div>
+    <%= yield %>
 
-<%= yield %>
-
-</body>
+  </body>
 </html>
