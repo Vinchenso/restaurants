@@ -5,5 +5,6 @@ class RestrurantsController < ApplicationController
 
   def show
     @restrurant = Restrurant.find(params[:id])
+    @comments =   @restrurant.comments
   end
 end
