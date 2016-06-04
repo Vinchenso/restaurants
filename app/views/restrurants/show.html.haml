@@ -1,0 +1,15 @@
+.row
+ %h1 
+  =@restrurant.name
+
+.row
+ .columns.medium-6
+  %p
+   =@restrurant.description
+
+ .columns.medium-6
+  %h3 Comment
+  = react_component('Comment', { author: 'JL',
+                                 body:   'Great Eating Place',
+                                 rank:   5 })
+

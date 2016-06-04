@@ -6,10 +6,11 @@ gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jbuilder', '~> 2.0'
-
+gem 'haml-rails'
 gem 'ancestry'
 gem 'rails_admin'
 gem 'foundation-rails'
+gem 'react-rails'
 
 group :development, :test do
   gem 'byebug'

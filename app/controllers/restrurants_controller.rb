@@ -3,4 +3,7 @@ class RestrurantsController < ApplicationController
     @restrurant = Restrurant.all
   end
 
+  def show
+    @restrurant = Restrurant.find(params[:id])
+  end
 end
